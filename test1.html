@@ -5,205 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>京东官网</title>
-    <style>
-        /* 全局样式 */
-        * {
-            box-sizing: border-box;
-        }
-        /* body样式 */
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-        /* 标题导航 */
-        .headnavbar{
-            overflow: hidden;
-            background-color: #E8E8E8  ;
-        }
-        /* 标题导航栏样式 */
-        .headnavbar a{
-            float: left;
-            display: block;
-            color: gray;
-            font-size: small;
-            text-align: center;
-            margin-left: 20px;
-            padding: 5px 5px;
-            text-decoration: none;
-        }
-        .headnavbar a:hover{
-            color: red;
-        }
-        /* 头全局 */
-        .header{
-            display: -ms-flexbox;
-            display: flex;
-            flex-wrap: nowrap;
-            -ms-flex-wrap: nowrap;
-            border-bottom: 1px solid 	#D8D8D8   ;
-        }
-        /* 左图标块 */
-        .leftdiv{
-            flex: 20%;
-            -ms-flex: 20%;
-            padding: 30px;
-        }
-        .leftimg{
-            padding: 10px;
-            width: 100%;
-            margin-left:80px;
-        }
-        /* 中间块搜索栏 */
-        .centerdiv{
-            flex: 60%;
-            -ms-flex: 60%;
-        }
-        /* 搜索块 */
-        .searchnav{
-            float: left;
-            width: 100%;
-            padding-top: 40px;
-            padding-left: 90px;
-        }
-        /* 搜索框 */
-        .searchnav input{
-           float: left;
-           border: 2.5px solid red;
-           height: 45px;
-           width: 600px;
-           outline: none;
-        }
-        /* 搜索按钮 */
-        .searchnav form button{
-            border: none;
-            color: white;
-            background-color: red;
-            height: 45px;
-            width: 70px;
-            text-align: center;
-            font-size: medium;
-            cursor: pointer;
-            outline: none;
-        }
-        .searchnav form button:hover{
-            background-color: #D80000;
-        }
-        /* 购物车按钮 */
-        .shopcar button{
-            height: 45px;
-            margin-left: 15px;
-            width:100px;
-            border: 1px solid #E8E8E8 ;
-            color: red;
-            cursor: pointer;
-            background-color: white;
-        }
-        .shopcar button:hover{
-            border: 1px solid #D80000;
-        }
-        /* 搜索下小标题链接 */
-        .searchtitle{
-            width: 100%;
-            clear: both;
-        }
-        .searchtitle a{
-            font-size: small;
-            margin-right: 10px;
-            color: gray;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        .searchtitle a:hover{
-            color: red;
-        }
-        .navtitle{
-            clear: both;
-            padding-top: 20px;
-            padding-left: 40px;
-        }
-        .navtitle a{
-            margin-right: 25px;
-            color: black;
-            text-decoration: none;
-        }
-        .navtitle a:hover{
-            color: red;
-        }
-        /* 右块 */
-        .rightdiv{
-            flex: 20%;
-            -ms-flex: 20%;
-            padding: 40px;
-        }
-        /* 全局块 */
-        .content_quanju_div{
-            background-color: #f9f9f9;
-        }
-        /* 内容块 */
-        .content{
-            display: -ms-flexbox;
-            display: flex;
-            flex-wrap: nowrap;
-            -ms-flex-wrap: nowrap;
-            margin-left: 150px;
-            margin-right: 150px;
-        }
-        /* 左标题导航 */
-        .leftnav{
-            flex: 15%;
-            -ms-flex: 15%;
-            background-color: white;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .leftnav ul{
-            list-style-type: none;
-            margin-left: 0;
-            padding: 0;
-        }
-        .leftnav li{
-            line-height: 25px;
-        }
-        .leftnav li:hover{
-            background-color: #E0E0E0 	;
-        }
-        .leftnav li a{
-            color: black;
-            text-decoration: none;
-            font-size: small;
-        }
-        .leftnav li a:hover{
-            color: red;
-        }
-        /* 图片广告块 */
-        .img_between_div{
-            flex: 70%;
-            -ms-flex: 70%;
-            margin: 10px;
-            background-color: white;
-        }
-        /* 用户右界面块 */
-        .user_right_div{
-            flex: 15%;
-            -ms-flex: 15%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background-color: white;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css\jingdong.css">
 </head>
 <body>
     <div class="headnavbar">
-        <a href="#" style="margin-left: 200px; margin-right: 400px;">安徽</a>
-        <a href="#" >你好，请登录</a>
-        <a href="#" style="color: red;">免费注册</a>
-        <a href="#">我的订单</a>
-        <a href="#">我的京东</a>
-        <a href="#">京东会员</a>
-        <a href="#" style="color: red;">企业采购</a>
-        <a href="#">客户服务</a>
-        <a href="#">网站导航</a>
-        <a href="#">手机京东</a>
+        <ul class="nav" id="head" style="list-style-type: none; margin: 0; padding: 0;">
+                
+            <div class="dropdown">
+                <a href="#" class="dropbtn" style=" margin-left: 300px;" >安徽</a>
+                <div class="dropdown-content" style="margin-left: 300px; max-width: 300px;">
+                  <a href="#">北京</a>
+                  <a href="#">上海</a>
+                  <a href="#">天津</a>
+                  <a href="#">重庆</a>
+                  <a href="#">河北</a>
+                  <a href="#">山西</a>
+                  <a href="#">河南</a>
+                  <a href="#">辽宁</a>
+                  <a href="#">吉林</a>
+                  <a href="#">黑龙江</a>
+                  <div class="line_01"></div>
+                  <span style="font-size: 10px; color: gray; margin-left: 15px;">地区专享版本</span><br>
+                  <a href="#">中国港澳</a>
+                  <a href="#">中国台湾</a>
+                  <a href="#">京东全球</a>
+                  <div class="line_01"></div>
+                  <span style="font-size: 10px; color: gray; margin-left: 15px;">Available Sites</span><br>
+                  <a href="#">中国港澳</a>
+                  <a href="#">中国台湾</a>
+                  <a href="#">京东全球</a>  
+                </div>
+            </div>    
+            <li style="margin-left: 400px"><a  class="black" href="#">你好，请登录</a></li>
+            <li ><a class="red" href="#" style="color: red;">免费注册</a></li>
+            <li ><span >|</span></li>
+            <li><a class="black" href="#" >我的订单</a></li>
+            <li ><span >|</span></li>
+            <div class="dropdown">
+                <a class="dropbtn" href="#">我的京东</a>
+                <div class="dropdown-content" style="max-width: 200px;">
+                    <a href="#">待处理订单</a>
+                    <a href="#">我的回答</a>
+                    <a href="#">返修退换货</a>
+                    <a href="#">我的关注</a>
+                    <a href="#">降价商品</a>
+                    <div class="line_01"></div>
+                    <a href="#">我的京豆</a>
+                    <a href="#">我的优惠券</a>
+                    <a href="#">我的白条</a>
+                    <a href="#">我的理财</a>
+                </div>
+            </div>
+            <li ><span >|</span></li>
+            <li><a class="black" href="#">京东会员</a></li>
+            <li ><span >|</span></li>
+            <div class="dropdown">
+                <a class="dropbtn" href="#" style="color: red;">企业采购</a>
+                <div class="dropdown-content" style="max-width: 180px;">
+                    <a href="#">企业购</a>
+                    <a href="#">商用场景馆</a>
+                    <a href="#">工业品</a>
+                    <a href="#">丰客多商城</a>
+                    <a href="#">礼品卡</a>
+                    <a href="#">微信企业购</a>
+                    <a href="#">工品优选</a>
+                    <a href="#">京东锦礼</a>
+                    <a href="#">大中型企业采购</a>
+                </div>
+            </div>
+            <li ><span >|</span></li>
+            <li><a class="black" href="#">客户服务</a></li>
+            <li ><span >|</span></li>
+
+
+            <li><a class="black" href="#">网站导航</a></li>
+            <li ><span >|</span></li>
+            <li><a class="black" href="#">手机京东</a></li>
+
+            
+            
+        </ul>
     </div>
     <div class="header">
         <div class="leftdiv">
