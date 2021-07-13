@@ -232,6 +232,49 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin: 10px;
     background-color: white;
 }
+.img_between_div{
+    display: flex;
+    display: -ms-flexbox;
+}
+.img_left_div{
+    flex: 80%;
+    -ms-flex: 80%;
+    margin-right: 5px;
+}
+.img_right_div{
+    flex: 20%;
+    -ms-flex: 20%;
+}
+.user_top a{
+    line-height: 10px;
+    font-size: small; 
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
+.user_top a:hover{
+    color: red;
+}
+.user_btn button{
+    border: none;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+.left_user_btn button{
+    background-color: red;
+    color: white;
+}
+.right_user_btn button{
+    background-color: #003333;
+    color: #CCCC33;
+}
+.user_btn button:hover{
+    background-color: #D80000;
+    color: white;
+}
 /* 用户右界面块 */
 .user_right_div{
     flex: 15%;
