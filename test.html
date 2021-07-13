@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .black{
+            color: gray;
+        }
+        li{
+            display: inline-block;        
+        }
+        a{
+            font-size: small;
+        }
+        .drop-down-content{
+            display: none;
+        }
+        .drop-down{
+            display: inline-block;
+        }
+        .drop-down:hover .drop-down-content{
+            display: block;
+            
+        }
+        a:link{text-decoration: none;color: gray;}
+        a:hover{color: red;}
+        li>span{
+            color: gray;
+        }
+        
+
+
+
+
+        .dropdown {
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        z-index: 9999;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-content a {
+            color: gray;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 10px;
+            float: left;
+           
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1; }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+          
+        }
+        .dropdown a:active{color: gray;}
+        .dropdown a:hover{
+            color: red;
+        }
+        
+        .line_01{
+            height: 1px;
+            border-top: 1px solid 	#DCDCDC;
+            text-align: center;
+            clear: both;
+        }
+        
+        
+        .shref a{
+            color: gray;
+            font-size: 10px;
+        }
+        .shref a:hover{
+            color: red;
+        }
+
+        .searchbutton{
+            background: red;
+            border-radius: 0 5px 5px 0;
+            width: 60px;
+            top: 0;
+            right: 0;
+        }
+        .searchbutton::before{
+            font-size: 20px;
+            color: #F9F0DA;
+        }
+
+        form{
+            
+            position: relative;
+            width: 679px;
+            margin: 0 auto;
+        }
+        
+        input, button {
+            border: none;
+            outline: none;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+        }
+
+        button {
+            color: white;
+            height: 44px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+        .mhref a{
+            font-size: medium;
+            margin-right: 15px;
+            color: gray;
+        }
+        .mhref a:hover{
+            color: red;
+        }
+        .lefttitle{
+            background-color: white; 
+            width: 200px;
+            height: 500px;
+            margin-left: 200px;
+            position: relative; 
+            top: 10px;
+        }
+        .lefttitle a{
+            font-size: small;
+            color: gray;
+        }
+        .lefttitle a:hover{
+            color: red;
+           
+        }
+
+        .lefttitle span{
+            color: gray;
+            margin-left: 5px;
+        }
+        .rightimg{
+            height: 500px;
+            width: 208px;
+            position: relative;
+            left: 1015px;
+            top: -495px;
+            display: inline-block;
+            
+        }
+        .rightimg img{
+            height: 164px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="width: 100%;">
+        <div id="header" style="background-color: #E6E6E6; height: 25px; "  >
+            <ul class="nav" id="head" style="list-style-type: none; margin: 0; padding: 0;">
+                
+                <div class="dropdown">
+                    <a href="#" class="dropbtn" style=" margin-left: 300px;" >安徽</a>
+                    <div class="dropdown-content" style="margin-left: 300px; max-width: 300px;">
+                      <a href="#">北京</a>
+                      <a href="#">上海</a>
+                      <a href="#">天津</a>
+                      <a href="#">重庆</a>
+                      <a href="#">河北</a>
+                      <a href="#">山西</a>
+                      <a href="#">河南</a>
+                      <a href="#">辽宁</a>
+                      <a href="#">吉林</a>
+                      <a href="#">黑龙江</a>
+                      <div class="line_01"></div>
+                      <span style="font-size: 10px; color: gray; margin-left: 15px;">地区专享版本</span><br>
+                      <a href="#">中国港澳</a>
+                      <a href="#">中国台湾</a>
+                      <a href="#">京东全球</a>
+                      <div class="line_01"></div>
+                      <span style="font-size: 10px; color: gray; margin-left: 15px;">Available Sites</span><br>
+                      <a href="#">中国港澳</a>
+                      <a href="#">中国台湾</a>
+                      <a href="#">京东全球</a>  
+                    </div>
+                </div>    
+                <li style="margin-left: 400px"><a  class="black" href="#">你好，请登录</a></li>
+                <li ><a class="red" href="#" style="color: red;">免费注册</a></li>
+                <li ><span >|</span></li>
+                <li><a class="black" href="#" >我的订单</a></li>
+                <li ><span >|</span></li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="#">我的京东</a>
+                    <div class="dropdown-content" style="max-width: 200px;">
+                        <a href="#">待处理订单</a>
+                        <a href="#">我的回答</a>
+                        <a href="#">返修退换货</a>
+                        <a href="#">我的关注</a>
+                        <a href="#">降价商品</a>
+                        <div class="line_01"></div>
+                        <a href="#">我的京豆</a>
+                        <a href="#">我的优惠券</a>
+                        <a href="#">我的白条</a>
+                        <a href="#">我的理财</a>
+                    </div>
+                </div>
+                <li ><span >|</span></li>
+                <li><a class="black" href="#">京东会员</a></li>
+                <li ><span >|</span></li>
+                <div class="dropdown">
+                    <a class="dropbtn" href="#" style="color: red;">企业采购</a>
+                    <div class="dropdown-content" style="max-width: 180px;">
+                        <a href="#">企业购</a>
+                        <a href="#">商用场景馆</a>
+                        <a href="#">工业品</a>
+                        <a href="#">丰客多商城</a>
+                        <a href="#">礼品卡</a>
+                        <a href="#">微信企业购</a>
+                        <a href="#">工品优选</a>
+                        <a href="#">京东锦礼</a>
+                        <a href="#">大中型企业采购</a>
+                    </div>
+                </div>
+                <li ><span >|</span></li>
+                <li><a class="black" href="#">客户服务</a></li>
+                <li ><span >|</span></li>
+
+
+                <li><a class="black" href="#">网站导航</a></li>
+                <li ><span >|</span></li>
+                <li><a class="black" href="#">手机京东</a></li>
+
+                
+                
+            </ul>
+        </div>
+        <div id="head1" style="background-color: white; height: 100px; " >
+            <div style="float: left; margin-left: 100px; ">
+                <img src="img\logo.gif" style="width: 40%; position: relative; top: -25px; left: 190px;  " alt="">
+            </div>
+            <div style="margin-top: 50px; ">
+                <form action="#" style=" display: inline-block;">
+                    <input class="search" type="text" placeholder="游戏本I7"  style=" height: 38px;width: 600px; border: 2px solid red;">
+                    <button class="searchbutton" type="submit" style="font-size: large;">搜索</button>
+                </form><br>
+                <div class="shref">
+                    <a href="#" style="color: red;">爆款五折起</a>
+                    <a href="#">0元试用</a>
+                    <a href="#">方太新品</a>
+                    <a href="#">小米</a>
+                    <a href="#">京东房产</a>
+                    <a href="#">清仓特卖</a>
+                    <a href="#">每100-50</a>
+                    <a href="#">iQOO手机</a>
+                    <a href="#">5折清仓</a>
+                </div>
+                <div class="mhref" style="margin-top: 10px;">
+                    <a href="#" style="color: red;">秒杀</a>
+                    <a href="#" style="color: red;">优惠券</a>
+                    <a href="#">PLUS会员</a>
+                    <a href="#">品牌闪购</a>
+                    <a href="#">拍卖</a>
+                    <a href="#">京东家电</a>
+                    <a href="#">京东超市</a>
+                    <a href="#">京东生鲜</a>
+                    <a href="#">京东国际</a>
+                    <a href="#">京东云</a>
+                </div>
+               
+            </div>
+        </div>
+        <div id="content" style="background-color: #E6E6E6; height: 1000px;">
+            <div >
+                <div class="lefttitle" style="float: left; z-index: 9998;">
+                    <a href="#">家用电器</a><br>
+                    <a href="#">手机</a><span>/</span>
+                    <a href="#">家用电器</a><span>/</span>
+                    <a href="#">手机</a><br>
+                    <a href="#">家用电器</a>
+                    <a href="#">手机</a><span>/</span>
+                    <a href="#">家用电器</a><br>
+                    <a href="#">手机</a><span>/</span>
+                    <a href="#">家用电器</a><span>/</span>
+                    <a href="#">手机</a><br>
+                    <a href="#">家用电器</a><span>/</span>
+                    <a href="#">手机</a><span>/</span>
+                    <a href="#">家用电器</a><br>
+                    <a href="#">手机</a>
+                    
+                </div>
+                <div style="position: relative; top: 10px;left:8px; ">
+                    <a href="#"><img src="img\q.jpg" alt="广告" style="height: 500px; width: 600px;"></a>
+                </div>
+                <div class="rightimg" >
+                    <a href="#"><img src="img\p1.png" alt="广告"></a>
+                    <a href="#"><img src="img\p2.png" alt="广告"></a>
+                    <a href="#"><img src="img\p3.png" alt="广告"></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer" style="background-color: white;height: 300px;">
+
+        </div>
+    </div>
+</body>
+</html>
