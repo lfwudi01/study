@@ -7,6 +7,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
+
+
 /* 标题导航 */
 .headnavbar{
     overflow: hidden;
@@ -284,4 +286,56 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
+}
+/* 用户界面分割线 */
+.line_user{
+    background: #ddd;
+    margin-top: 12px;
+    margin-left: 20px;
+    float: left;
+    width: 80%;
+    height: 1px;
+    overflow: hidden;
+}
+.jingdong_news{
+    clear: both;
+    height: 40px;
+    width: 100%;
+}
+.jingdong_news h5{
+    display: inline-block;
+    padding-left: 15px;
+}
+.jingdong_news a{
+    display: inline-block;
+    padding-left: 75px;
+    font-size: small; 
+    color: gray;
+    text-decoration: none;
+}
+.jingdong_news a:hover{
+    color: red;
+}
+.item_ul{
+    list-style-type: none;
+                margin-left: 10px;
+                padding: 0;
+}
+.item_li{
+    height: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.item_li a{
+    text-decoration: none; 
+    font-size: small;
+    color: gray;
+}
+.item_li span{
+    color: red;
+    margin-right: 5px;
+    background-color: #FFCCCC;
+}
+.item_li a:hover{
+    color: red;
 }
