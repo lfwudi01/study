@@ -484,3 +484,68 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     height: 1px;
     overflow: hidden;
 }
+
+.footer_bottom{
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.bottom_div{
+    width: 1190px;
+    height: 220px;
+    position: absolute;
+    left: 11.5%;
+}
+.bottom_title{
+    position: absolute;
+    left: 8%;
+    top: 5%;
+}
+
+.bottom_title a{
+    font-size: small;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+.bottom_title a:hover{
+    color: red;
+}
+.bottom_title span{
+    font-size: small;
+    color: #D0D0D0;
+}
+.bottom_item{
+    height: 36px;
+    width: 1190px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    overflow: hidden;
+
+}
+.icon img{
+    width: 103px;
+    height: 32px;
+    background-repeat:no-repeat;
+    background-image:url(../img/duokuai.png);
+}
+.icon1 img{
+    background-position:-205px -148px;
+}
+.icon2 img{
+    background-position:-205px -111px;
+}
+.icon3 img{
+    background-position:-205px -74px;
+}
+.icon4 img{
+    background-position:-205px -37px;
+}
+.icon5 img{
+    background-position:-205px 0px;
+}
+.icon6 img{
+    background-position:0px -155px;
+}
