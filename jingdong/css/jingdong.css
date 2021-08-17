@@ -241,11 +241,42 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: flex;
     display: -ms-flexbox;
 }
-.img_left_div{
-    flex: 80%;
-    -ms-flex: 80%;
-    margin-right: 5px;
+.autochangediv{
+    position: relative;
+    width: 647px;
+    height: 556px;
+    /* overflow: hidden; */
 }
+
+.autochangebtn{
+    /* background-color: red; */
+    position: absolute;
+    bottom: 60px;
+    
+}
+
+.autochangebtn a{
+    float: left;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    opacity: 0.5;
+    margin: 0 5px;
+    bottom: 15px;
+}
+
+
+.img_left_div{
+    display: block;
+    position:absolute;
+}
+.img_left_div a{
+    position: absolute;
+    width: 647px;
+    height: 556px;
+}
+
 .img_right_div{
     flex: 20%;
     -ms-flex: 20%;
