@@ -245,14 +245,13 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: relative;
     width: 647px;
     height: 556px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .autochangebtn{
     /* background-color: red; */
     position: absolute;
-    bottom: 60px;
-    
+    bottom: 30px;
 }
 
 .autochangebtn a{
@@ -260,19 +259,22 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: block;
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.582);
     opacity: 0.5;
     margin: 0 5px;
-    bottom: 15px;
+    border-radius: 50px;
 }
 
-
+.autochangebtn a:hover{
+    background-color: black;
+}
 .img_left_div{
     display: block;
     position:absolute;
 }
 .img_left_div a{
-    position: absolute;
+    float: left;
+    display: block;
     width: 647px;
     height: 556px;
 }
