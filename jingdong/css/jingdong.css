@@ -64,8 +64,12 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     float: left;
    
 }
+.dropbtn{
+    color: gray;
+}
 .dropbtn:hover{
     background-color: #f1f1f1;
+    color: red;
 }
 .dropdown-content a:hover {background-color: #f1f1f1; }
 
@@ -136,6 +140,7 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100%;
     padding-top: 40px;
     padding-left: 90px;
+    position: relative;
 }
 /* 搜索框 */
 .searchnav input{
@@ -175,6 +180,7 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /* 搜索下小标题链接 */
 .searchtitle{
+    position: relative;
     width: 100%;
     clear: both;
 }
@@ -192,6 +198,7 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     clear: both;
     padding-top: 20px;
     padding-left: 40px;
+    position: relative;
 }
 .navtitle a{
     margin-right: 25px;

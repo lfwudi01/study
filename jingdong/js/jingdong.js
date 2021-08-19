@@ -5,17 +5,23 @@ window.onload = function () {
     var leftimg = document.getElementById("leftimg");
     var logo = leftimg.getElementsByTagName("img");
     var logospan = leftimg.getElementsByTagName("span");
-    leftimg.onmousemove=function(){
-        logo[0].src="img/changelogo.gif";
-        setTimeout(function(){
-           logospan[0].style.opacity="1";
-           logospan[1].style.opacity="1";
-           setTimeout(function(){
-                logo[0].src="img/logo.png";
-                logospan[0].style.opacity="";
-                logospan[1].style.opacity="";
-           },2000);
-        },4000);
+    var flag = new RegExp("img/logo.png");
+    logo[0].onmousemove = function () {
+        if(flag.test(logo[0].src)){
+            logo[0].src = "img/changelogo.gif";
+            setTimeout(function () {
+                logospan[0].style.opacity = "1";
+                logospan[1].style.opacity = "1";
+                setTimeout(function () {
+                    logo[0].src = "img/logo.png";
+                    logospan[0].style.opacity = "";
+                    logospan[1].style.opacity = "";
+                }, 2000);
+            }, 4000);
+        }else{
+           return false; 
+        }
+
     };
 
     /*
@@ -71,10 +77,11 @@ window.onload = function () {
                 if (index == imgArr.length - 1) {
                     imgBox.style.left = 0;
                     index = 0;
-                    btns[0].style.backgroundColor = "black";
+                    btns[index].style.backgroundColor = "black";
                 }
+                btns[index].style.backgroundColor = "black";
             });
-            btns[index].style.backgroundColor = "black";
+            
         }, 3000);
     };
 
