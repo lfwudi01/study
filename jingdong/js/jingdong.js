@@ -1,4 +1,23 @@
 window.onload = function () {
+    /* 
+        设置图标logo动态变化
+    */
+    var leftimg = document.getElementById("leftimg");
+    var logo = leftimg.getElementsByTagName("img");
+    var logospan = leftimg.getElementsByTagName("span");
+    leftimg.onmousemove=function(){
+        logo[0].src="img/changelogo.gif";
+        setTimeout(function(){
+           logospan[0].style.opacity="1";
+           logospan[1].style.opacity="1";
+           setTimeout(function(){
+                logo[0].src="img/logo.png";
+                logospan[0].style.opacity="";
+                logospan[1].style.opacity="";
+           },2000);
+        },4000);
+    };
+
     /*
         设置img_left_div的宽度随图片数量而变化
     */
