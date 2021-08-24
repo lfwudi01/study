@@ -92,9 +92,11 @@ window.onload = function () {
         for (var i = 0; i < btns.length; i++) {
             //解决hover不生效的问题
             btns[i].style.backgroundColor = "";
+            btns[i].style.border="";
 
         }
-        btns[index].style.backgroundColor = "black";
+        btns[index].style.backgroundColor = "white";
+        btns[index].style.border="2px solid rgba(0,0,0,.1)";
     };
     /*
         move函数封装移动操作

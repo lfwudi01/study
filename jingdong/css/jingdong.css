@@ -29,6 +29,13 @@ body{
     font-size: small;
 }
 /* 标题下拉栏 */
+.nav li{
+    color: gray;
+    font-size: 13px;
+}
+.nav span{
+    font-size: xx-small;
+}
 .drop-down-content{
     display: none;
 }
@@ -293,16 +300,18 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 .autochangebtn a{
     float: left;
     display: block;
-    width: 15px;
-    height: 15px;
-    background-color: rgba(255, 0, 0, 0.582);
-    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(0,0,0,.05);
     margin: 0 5px;
     border-radius: 50px;
 }
 
 .autochangebtn a:hover{
-    background-color: black;
+    border:2px solid rgba(0,0,0,.1);
+    background-color: white;
+
 }
 .img_left_div{
     display: block;
