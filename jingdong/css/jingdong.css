@@ -67,6 +67,15 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 .dropbtn{
     color: gray;
 }
+.fa-map-marker-alt{
+    color: red;
+    margin-right: 3px;
+}
+
+.fa-angle-down{
+    font-size: 1px;
+    color: #808080;
+}
 .dropbtn:hover{
     background-color: #f1f1f1;
     color: red;
@@ -393,6 +402,8 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     height: 20px;
     overflow: hidden;
     margin-top: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .item_li a{
     text-decoration: none; 

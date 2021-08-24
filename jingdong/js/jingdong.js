@@ -7,7 +7,7 @@ window.onload = function () {
     var logospan = leftimg.getElementsByTagName("span");
     var flag = new RegExp("img/logo.png");
     logo[0].onmousemove = function () {
-        if(flag.test(logo[0].src)){
+        if (flag.test(logo[0].src)) {
             logo[0].src = "img/changelogo.gif";
             setTimeout(function () {
                 logospan[0].style.opacity = "1";
@@ -18,8 +18,8 @@ window.onload = function () {
                     logospan[1].style.opacity = "";
                 }, 2000);
             }, 4000);
-        }else{
-           return false; 
+        } else {
+            return false;
         }
 
     };
@@ -47,13 +47,12 @@ window.onload = function () {
         btns[i].num = i;
         btns[i].onclick = function () {
             clearInterval(timer);
-            setA();
             index = this.num;
             var target = -647 * index;
             move(imgBox, target, 200, "left", function () {
                 autoChange();
             });
-            btns[index].style.backgroundColor = "black";
+            setA();
         };
     }
     /* 
@@ -71,17 +70,13 @@ window.onload = function () {
     function autoChange() {
         timer = setInterval(function () {
             index++;
-
-            setA();
+            if (index >= imgArr.length) {
+                index = 0;
+            }
             move(imgBox, -647 * index, 200, "left", function () {
-                if (index == imgArr.length - 1) {
-                    imgBox.style.left = 0;
-                    index = 0;
-                    btns[index].style.backgroundColor = "black";
-                }
-                btns[index].style.backgroundColor = "black";
+                setA();
             });
-            
+
         }, 3000);
     };
 
@@ -90,10 +85,16 @@ window.onload = function () {
                     创建一个函数设置所有a背景色
                  */
     function setA() {
+        if (index >= imgArr.length - 1) {
+            index = 0;
+            imgBox.style.left = 0;
+        }
         for (var i = 0; i < btns.length; i++) {
             //解决hover不生效的问题
             btns[i].style.backgroundColor = "";
+
         }
+        btns[index].style.backgroundColor = "black";
     };
     /*
         move函数封装移动操作
