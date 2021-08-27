@@ -8,353 +8,7 @@
     <title>博客首页</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./font/css/all.css">
-    <style>
-        body {
-            background-color: #FFFBF0;
-        }
-
-        /* 
-            顶部导航栏（home 关于我们）
-        */
-        .toptitle {
-            height: 30px;
-            background-color: #F3F3F3;
-            border-bottom: 1px solid #E6E6E6;
-        }
-
-        .toptitle ul {
-            width: 1000px;
-            height: 30px;
-            line-height: 30px;
-            margin: 0 auto;
-            text-align: right;
-        }
-
-        .toptitle a {
-            text-decoration: none;
-            margin-left: 20px;
-            color: #666;
-            font-size: 12px;
-        }
-
-        .toptitle a:hover {
-            color: black;
-        }
-
-        /* 
-            背景图片标题栏
-        */
-        .bgtitle {
-            height: 170px;
-            background-image: url("./img/bgImg.jpg");
-        }
-
-        /* 
-            导航栏
-        */
-        .bottomtitle {
-            height: 50px;
-            background-color: #BFAB86;
-        }
-
-        .bottomtitle ul {
-            width: 1000px;
-            height: 50px;
-            margin: 0 auto;
-        }
-
-        .bottomtitle li {
-            float: left;
-            line-height: 46px;
-            padding: 0 29px;
-            margin: 0 2px;
-            cursor: pointer;
-            border-top: 4px solid transparent;
-        }
-
-        .bottomtitle a {
-            font-size: 18px;
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .bottomtitle li:hover {
-            background-color: #FFFBF0;
-            border-top: 4px solid #F77825;
-        }
-
-        .bottomtitle li:hover a {
-            color: black;
-        }
-
-        /* 
-            搜索框
-        */
-        .search {
-            width: 97px;
-            height: 32px;
-            border: 0;
-            background-color: white;
-            border-radius: 20px;
-            float: right;
-            margin-top: -42px;
-            margin-right: 15px;
-            border: 1px solid transparent;
-            transition: width 0.5s;
-        }
-
-        .searchin {
-            width: 35px;
-            height: 20px;
-            float: left;
-            margin-left: 12px;
-            margin-top: 5px;
-            border: 0;
-            outline: 0;
-        }
-
-        .searchbtn {
-            width: 30px;
-            height: 30px;
-            float: right;
-            margin-right: 10px;
-            border: 0;
-            background-color: white;
-            background: url("./img/search.png") no-repeat 0 -360px;
-            cursor: pointer;
-        }
-
-        .search:hover {
-            border: 1px solid #31899B;
-            width: 135px;
-        }
-
-        /* 
-            内容区
-        */
-        .content {
-            width: 1000px;
-            height: 3000px;
-            margin: 0 auto;
-            margin-top: 20px;
-            /* background-color: burlywood; */
-        }
-
-        /* 
-            左边栏
-        */
-        .leftct {
-            width: 670px;
-            float: left;
-        }
-
-        /* 
-            轮播图 
-        */
-        .autoimg {
-            width: 500px;
-            height: 280px;
-            background-color: blueviolet;
-            float: left;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .autobtn {
-            position: absolute;
-            top: 250px;
-            left: 66px;
-        }
-
-        .autobtn a {
-            width: 10px;
-            height: 10px;
-            background-color: white;
-            display: block;
-            float: left;
-            margin-left: 10px;
-        }
-
-        .autobtn a:hover {
-            background-color: #DB6D4C;
-        }
-
-        .autoimg img,
-        .autoimg li {
-            width: 500px;
-            height: 280px;
-        }
-
-        /* 
-            关于博主+关于叶子书屋
-        */
-        .introduction {
-            width: 170px;
-            height: 280px;
-            float: left;
-        }
-
-        .introduction div {
-            height: 96px;
-            padding: 20px;
-            margin-bottom: 4px;
-        }
-
-        .introduction a {
-            text-decoration: none;
-            outline: none;
-            font-size: 16px;
-            font-weight: bold;
-            color: #474645;
-        }
-
-        .introduction a:hover {
-            color: #006666;
-            text-decoration: underline;
-        }
-
-        .introduction p {
-            margin-top: 13px;
-            line-height: 18px;
-            color: #B3B3B3;
-            font-size: 12px;
-        }
-
-        .topone {
-            border: 1px solid #FFCC00;
-        }
-
-        .toptwo {
-            border: 1px solid #CCEFF5;
-        }
-
-        /* 
-            下内容区
-        */
-        .bottominfo {
-            width: 670px;
-            height: 1000px;
-            /* background-color: crimson; */
-            float: left;
-            margin-top: 20px;
-        }
-
-        .smailtitle {
-            width: 670px;
-            height: 40px;
-            border-bottom: 4px solid #db6d4c;
-        }
-
-        .smailtitle h2 {
-            float: left;
-            line-height: 40px;
-            color: #333;
-            font-weight: bold;
-            margin-right: 430px;
-        }
-
-        .smailtitle li {
-            float: left;
-            line-height: 40px;
-            margin-right: 10px;
-        }
-
-        .smailtitle a {
-            color: #666;
-            font-size: 12px;
-            text-decoration: none;
-        }
-
-        .blogs {
-            width: 670px;
-            height: 147px;
-            border-bottom: 1px solid #BFAB86;
-            padding: 30px 0;
-        }
-        .leftimg{
-            width: 167.5px;
-            height: 147px;
-            float: left;
-            overflow: hidden;
-        }
-
-        .leftimg img {
-            width: 167.5px;
-            height: 147px;
-            float: left;
-            transition: all 0.5s;
-        }
-        .leftimg img:hover{
-            width: 175px;
-            height: 155px;
-        }
-        .blogs:hover{
-            background-color: white;
-        }
-        
-        .blogs ul {
-            width: 482.39px;
-            height: 147px;
-            /* float: left; */
-            margin-top: 10px;
-            margin-left: 190px;
-        }
-
-        .blogs h3 {
-            margin-bottom: 10px;
-        }
-        .blogs a{
-            text-decoration: none;
-        }
-        .blogs h3 a {
-            font-weight: bold;
-            color: #474645;
-        }
-
-        .blogs h3 a:hover {
-            color: #006666;
-            text-decoration: underline;
-        }
-
-        .blogs p {
-            font-size: 12px;
-            color: #777;
-            line-height: 25px;
-        }
-
-        .p2 {
-            margin: 10px 0;
-        }
-
-        .blogs ul p span {
-            margin-right: 30px;
-        }
-        .msg:hover{
-            text-decoration: underline;
-        }
-        .zan i{
-            color: #E0E0E0;
-        }
-        .zan a{
-            color: #777;
-        }
-        .zan:hover i{
-            color: #84C1E9;
-        }
-        .zan:hover a{
-            color: #406CA9;
-        }
-        /* 
-            右内容区
-        */
-        .rightct {
-            width: 300px;
-            height: 529px;
-            background-color: cyan;
-            margin-left: 30px;
-            float: left;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/inhtml.css">
 </head>
 
 <body>
@@ -428,8 +82,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -449,8 +102,107 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
+                            </span>
+                        </p>
+                    </ul>
+                </div>
+                <div class="blogs">
+                    <div class="leftimg">
+                        <a href="#"><img src="./img/leftimgs/leftimg2.jpeg" alt="展示图片"></a>
+                    </div>
+                    <ul>
+                        <h3><a href="#">给王先生的一封情书</a></h3>
+                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                        </p>
+                        <p class="p2">
+                            <span>
+                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
+                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
+                            </span>
+                            <span>
+                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
+                                2020-02-14 21:19:26
+                            </span>
+                            <span>
+                                <i class="far fa-comment"></i>
+                                <a href="#" class="msg">61</a>
+                            </span>
+                            <span>
+                                <i class="far fa-eye"></i>
+                                17.2
+                            </span>
+                            <span class="zan">
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
+                            </span>
+                        </p>
+                    </ul>
+                </div>
+                <div class="blogs">
+                    <div class="leftimg">
+                        <a href="#"><img src="./img/leftimgs/leftimg3.jpg" alt="展示图片"></a>
+                    </div>
+                    <ul>
+                        <h3><a href="#">给王先生的一封情书</a></h3>
+                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                        </p>
+                        <p class="p2">
+                            <span>
+                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
+                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
+                            </span>
+                            <span>
+                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
+                                2020-02-14 21:19:26
+                            </span>
+                            <span>
+                                <i class="far fa-comment"></i>
+                                <a href="#" class="msg">61</a>
+                            </span>
+                            <span>
+                                <i class="far fa-eye"></i>
+                                17.2
+                            </span>
+                            <span class="zan">
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
+                            </span>
+                        </p>
+                    </ul>
+                </div>
+                <div class="blogs">
+                    <div class="leftimg">
+                        <a href="#"><img src="./img/leftimgs/leftimg4.jpeg" alt="展示图片"></a>
+                    </div>
+                    <ul>
+                        <h3><a href="#">给王先生的一封情书</a></h3>
+                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                        </p>
+                        <p class="p2">
+                            <span>
+                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
+                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
+                            </span>
+                            <span>
+                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
+                                2020-02-14 21:19:26
+                            </span>
+                            <span>
+                                <i class="far fa-comment"></i>
+                                <a href="#" class="msg">61</a>
+                            </span>
+                            <span>
+                                <i class="far fa-eye"></i>
+                                17.2
+                            </span>
+                            <span class="zan">
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -462,8 +214,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -483,8 +234,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -496,8 +247,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -517,8 +267,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -530,8 +280,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -551,8 +300,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -564,8 +313,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -585,8 +333,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -598,8 +346,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -619,8 +366,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -632,8 +379,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -653,8 +399,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -666,8 +412,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -687,8 +432,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -700,8 +445,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -721,8 +465,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -734,8 +478,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -755,8 +498,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -768,8 +511,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -789,8 +531,8 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
@@ -802,8 +544,7 @@
                     <ul>
                         <h3><a href="#">给王先生的一封情书</a></h3>
                         <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
+                            <a href="#" style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
                         </p>
                         <p class="p2">
                             <span>
@@ -823,117 +564,53 @@
                                 17.2
                             </span>
                             <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
-                            </span>
-                        </p>
-                    </ul>
-                </div>
-                <div class="blogs">
-                    <div class="leftimg">
-                        <a href="#"><img src="./img/leftimgs/leftimg1.jpg" alt="展示图片"></a>
-                    </div>
-                    <ul>
-                        <h3><a href="#">给王先生的一封情书</a></h3>
-                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
-                        </p>
-                        <p class="p2">
-                            <span>
-                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
-                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
-                            </span>
-                            <span>
-                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
-                                2020-02-14 21:19:26
-                            </span>
-                            <span>
-                                <i class="far fa-comment"></i>
-                                <a href="#" class="msg">61</a>
-                            </span>
-                            <span>
-                                <i class="far fa-eye"></i>
-                                17.2
-                            </span>
-                            <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
-                            </span>
-                        </p>
-                    </ul>
-                </div>
-                <div class="blogs">
-                    <div class="leftimg">
-                        <a href="#"><img src="./img/leftimgs/leftimg1.jpg" alt="展示图片"></a>
-                    </div>
-                    <ul>
-                        <h3><a href="#">给王先生的一封情书</a></h3>
-                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
-                        </p>
-                        <p class="p2">
-                            <span>
-                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
-                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
-                            </span>
-                            <span>
-                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
-                                2020-02-14 21:19:26
-                            </span>
-                            <span>
-                                <i class="far fa-comment"></i>
-                                <a href="#" class="msg">61</a>
-                            </span>
-                            <span>
-                                <i class="far fa-eye"></i>
-                                17.2
-                            </span>
-                            <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
-                            </span>
-                        </p>
-                    </ul>
-                </div>
-                <div class="blogs">
-                    <div class="leftimg">
-                        <a href="#"><img src="./img/leftimgs/leftimg1.jpg" alt="展示图片"></a>
-                    </div>
-                    <ul>
-                        <h3><a href="#">给王先生的一封情书</a></h3>
-                        <p>和王先生在一起已经十个年头。2010年确立恋爱关系2012年开启北漂生涯2016年领证结婚，迈入婚姻殿堂2018年有了豌豆豆2019年辞职在家育儿在这十年期间，每个情人...
-                            <a href="#"
-                                style="padding-left: 5px;display: block;color: #759b08;width: 32px;">[详情]</a>
-                        </p>
-                        <p class="p2">
-                            <span>
-                                <i class="fas fa-tag" style="color: #F8A8A8;"></i>
-                                <a href="#" style="color:#759b08 ;">韶华追忆</a>
-                            </span>
-                            <span>
-                                <i class="fas fa-history" style="color: #6AC9E9;"></i>
-                                2020-02-14 21:19:26
-                            </span>
-                            <span>
-                                <i class="far fa-comment"></i>
-                                <a href="#" class="msg">61</a>
-                            </span>
-                            <span>
-                                <i class="far fa-eye"></i>
-                                17.2
-                            </span>
-                            <span class="zan">
-                                <i class="fas fa-thumbs-up" ></i>
-                                <a href="javascript">428</a> 
+                                <i class="fas fa-thumbs-up"></i>
+                                <a href="javascript:;">428</a>
                             </span>
                         </p>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="rightct"></div>
+        <div class="rightct">
+            <div class="title01">
+                <h3>关注我</h3>
+                <div class="contact">
+                    <ul>
+                        <li><a class="xlwb" href="#">新浪微博</a></li>
+                        <li><a class="txwb" href="#">腾讯微博</a></li>
+                        <li><a class="yx" href="#">邮箱</a></li>
+                        <li><a class="yjfk" href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="title02">
+                <h3>最新文章</h3>
+                <ul>
+                    <li><a href="#">给王先生的一封情书</a></li>
+                    <li><a href="#">云上班体验</a></li>
+                    <li><a href="#">在疫情肆虐期间，做好防护，不要心存侥幸</a></li>
+                    <li><a href="#">凌晨四点的洛杉矶，你再也看不见了</a></li>
+                    <li><a href="#">又是一年小年中</a></li>
+                    <li><a href="#">2020年的第一场雪</a></li>
+                </ul>
+            </div>
+            <div class="title03">
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="#">PHP学习网</a></li>
+                    <li><a href="#">KTWO博客</a></li>
+                    <li><a href="#">80乐</a></li>
+                    <li><a href="#">Leftso(左搜)</a></li>
+                    <li><a href="#">袁志蒙博客</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        
     </div>
 </body>
 
