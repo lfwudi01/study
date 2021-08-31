@@ -136,23 +136,31 @@ body {
     width: 670px;
     float: left;
 }
-
+.topinfo{
+    width: 670px;
+    height: 280px;
+}
 /* 
     轮播图 
 */
 .autoimg {
     width: 500px;
     height: 280px;
-    background-color: blueviolet;
     float: left;
     position: relative;
     overflow: hidden;
 }
 
 .autobtn {
-    position: absolute;
+    position: relative;
     top: 250px;
     left: 66px;
+    z-index: 3;
+}
+
+.autoimgs{
+   position: absolute;
+    
 }
 
 .autobtn a {
@@ -168,9 +176,17 @@ body {
     background-color: #DB6D4C;
 }
 
-.autoimg img,
+
 .autoimg li {
     width: 500px;
+    height: 280px;
+}
+.autoimg img{
+    width: 500px;
+    height: 280px;
+}
+.autoimgs a{
+    display: block;
     height: 280px;
 }
 

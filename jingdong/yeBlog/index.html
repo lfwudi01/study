@@ -9,6 +9,76 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./font/css/all.css">
     <link rel="stylesheet" href="./css/inhtml.css">
+    <script>
+        window.onload = function () {
+            var autobtn = document.getElementById("autobtn");
+            var btns = autobtn.getElementsByTagName("a");
+            var autoimgs = document.getElementById("autoimgs");
+            var index = 0;
+            var imgArr=autoimgs.getElementsByTagName("img");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].num = i;
+                btns[i].onmousemove = function () {
+                    index = this.num;
+                    var target = -280 * index;
+                    move(autoimgs, target, 30, "top");
+                    setA();
+                };
+            }
+
+
+            /*
+            move函数封装移动操作
+             obj 对象
+            target 目标
+            */
+            function move(obj, target, speed, attr, callback) {
+                clearInterval(obj.timer);
+                var current = parseInt(getStyle(obj, attr));
+                if (current > target) {
+                    speed = -speed;
+                }
+                obj.timer = setInterval(function () {
+                    var oldValue = parseInt(getStyle(obj, attr));
+                    var newValue = oldValue + speed;
+                    if ((speed > 0 && newValue > target) || (speed < 0 && newValue < target)) {
+                        newValue = target;
+                    }
+                    obj.style[attr] = newValue + "px";
+                    if (newValue == target) {
+                        clearInterval(obj.timer);
+                        callback && callback();
+                    }
+                }, 30);
+            };
+            function getStyle(obj, name) {
+                if (window.getComputedStyle) {
+                    //其他浏览器
+                    return getComputedStyle(obj, null)[name];
+                } else {
+                    //ie8浏览器
+                    return obj.currentStyle[name];
+                }
+            }
+
+            /* 
+        创建一个函数设置所有a背景色
+    */
+            function setA() {
+                if (index >= imgArr.length - 1) {
+                    index = 0;
+                    autoimgs.style.left = 0;
+                }
+                for (var i = 0; i < btns.length; i++) {
+                    //解决hover不生效的问题
+                    btns[i].style.backgroundColor = "";
+                    btns[i].style.border = "";
+
+                }
+                btns[index].style.backgroundColor = "#DB6D4C";
+            };
+        };
+    </script>
 </head>
 
 <body>
@@ -42,13 +112,13 @@
         <div class="leftct">
             <div class="topinfo">
                 <div class="autoimg">
-                    <div class="autobtn">
+                    <div class="autobtn" id="autobtn">
                         <a href="javascript:;"></a>
                         <a href="javascript:;"></a>
                         <a href="javascript:;"></a>
                         <a href="javascript:;"></a>
                     </div>
-                    <ul>
+                    <ul class="autoimgs" id="autoimgs">
                         <li><a href="#"><img src="./img/autoimg/auto1.jpg" alt="轮播图"></a></li>
                         <li><a href="#"><img src="./img/autoimg/auto2.jpg" alt="轮播图"></a></li>
                         <li><a href="#"><img src="./img/autoimg/auto3.jpg" alt="轮播图"></a></li>
@@ -610,7 +680,7 @@
         </div>
     </div>
     <div class="footer">
-        
+
     </div>
 </body>
 
