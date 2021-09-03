@@ -11,4 +11,11 @@
 }   
 .clearfix{   
     *zoom:1;   
-}  
+} 
+a{  
+    text-decoration: none;
+    color: #B0B0B0;
+}
+body{
+    min-width: 1583px;
+} 

@@ -1,0 +1,42 @@
+.header{
+    width: 100%;
+    background-color: #333;
+}
+.nav-top{
+    width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+.titlewarper ,.titlewarper>li{
+    float: left;
+}
+.nav-top a{
+    font-size: 12px;
+}
+.nav-top a:hover{
+    color: #fff;
+}
+.accountwarper{
+    float: right;
+    margin-right: 26px;
+}
+.accountwarper>li{
+    float: left;
+}
+.shopcarwarper{
+    height: 40px;
+    float: right;
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+}
+.shopcarwarper i{
+    margin-right: 3px;
+}
+.line{
+    float: left;
+    height: 13px;
+    border-left: 1px solid #423C37;
+    margin: 15px 7px;
+}
