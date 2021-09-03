@@ -1,0 +1,14 @@
+/* 
+    消除浮动，解决高度塌陷
+*/
+.clearfix:before, .clearfix:after {   
+    content:"";   
+    display:table;   
+}   
+.clearfix:after{   
+    clear:both;   
+    overflow:hidden;   
+}   
+.clearfix{   
+    *zoom:1;   
+}  
