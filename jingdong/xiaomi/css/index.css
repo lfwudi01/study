@@ -14,7 +14,7 @@
 .nav-top a{
     font-size: 12px;
 }
-.nav-top a:hover{
+.nav-top li>a:hover{
     color: #fff;
 }
 .accountwarper{
@@ -39,4 +39,42 @@
     height: 13px;
     border-left: 1px solid #423C37;
     margin: 15px 7px;
+}
+.downloadapp{
+    position: relative;
+}
+.downloadapp .app{
+    display: block;
+}
+.downloadapp:hover .dropdown{
+    height: 148px;
+}
+.downloadapp:hover .app::after{
+    content: '';
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    position: absolute;
+    left: 16px;
+    top: 24px;
+}
+.dropdown{
+    position: absolute;
+    left: -40px;
+    width: 128px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0, 0, 0,.3);
+    transition: all 0.2s;
+}
+
+.dropdown img{
+    height: 88px;
+    margin: 20px;
+    margin-bottom: -20px;
+}
+.dropdown a{
+    color: #333;
+    font-size: 14px;
 }
