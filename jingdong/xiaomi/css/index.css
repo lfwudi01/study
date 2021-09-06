@@ -4,8 +4,8 @@
 }
 .nav-top{
     width: 1226px;
-    height: 40px;
-    line-height: 40px;
+    height: 43px;
+    line-height: 43px;
     margin: 0 auto;
 }
 .titlewarper ,.titlewarper>li{
@@ -25,11 +25,12 @@
     float: left;
 }
 .shopcarwarper{
-    height: 40px;
+    height:auto;
     float: right;
     width: 120px;
     text-align: center;
     background-color: #424242;
+    position: relative;
 }
 .shopcarwarper i{
     margin-right: 3px;
@@ -56,17 +57,19 @@
     border-bottom: 8px solid #fff;
     position: absolute;
     left: 16px;
-    top: 24px;
+    top: 28.5px;
 }
 .dropdown{
     position: absolute;
+    top: 45px;
     left: -40px;
     width: 128px;
     height: 0;
     overflow: hidden;
     text-align: center;
     box-shadow: 0 0 10px rgb(0, 0, 0,.3);
-    transition: all 0.2s;
+    transition: all 0.3s;
+    background-color: #fff;
 }
 
 .dropdown img{
@@ -77,4 +80,101 @@
 .dropdown a{
     color: #333;
     font-size: 14px;
+}
+.shopdrop{
+    background-color: #fff;
+    width: 315px;
+    height: 0;
+    position: absolute;
+    left: -195px;
+    line-height: 100px;
+    text-align: center;
+    box-shadow:0 5px 5px rgb(0, 0, 0,.3);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.shopdrop p{
+    font-size: 12px;
+}
+.shopcarwarper:hover{
+    background-color: #fff;
+}
+.shopcarwarper:hover .shoptext{
+
+    color: #FF6700;
+}
+.shopcarwarper:hover .shopdrop{
+    height: 100px;
+}
+.navheader{
+    width: 100%;
+    height: 100px;
+}
+.headertitle{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+.logodiv{
+    float: left;
+    
+    margin-top: 22px;
+}
+
+.logodiv img{
+    height: 56px;
+}
+.titlediv{
+    float: left;
+}
+.titlediv ul,.titlediv li{
+    float: left;
+}
+.titlediv ul{
+    line-height: 100px;
+    margin-left: 32px;
+}
+.titlediv li{
+    margin-right: 25px;
+}
+.titlediv li>a{
+    font-size: 16px;
+    color: #333;
+}
+.titlediv li>a:hover{
+    color: #FF6700;
+}
+.searchdiv{
+    float: left;
+    margin-left: 10px;
+}
+.searchdiv input{
+    margin-top: 26px;
+    outline: none;
+    border: 1px solid #DDDDDD;
+    width: 243px;
+    height: 48px;
+    float: left;
+}
+.searchdiv button{
+    background-color: #fff;
+    outline: none;
+    border: 1px solid #ddd;
+    border-left: none;
+    margin-top: 26px;
+    width: 48px;
+    height: 48px;
+    float: left;
+    cursor: pointer;
+}
+.searchdiv i{
+    font-size: 17px;
+    color: #616161;
+}
+
+.searchdiv input:hover{
+    border-color: #B0B0B0;
+}
+.searchdiv input:hover ~button{
+    border-color: #B0B0B0;
 }
