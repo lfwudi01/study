@@ -175,6 +175,72 @@
 .searchdiv input:hover{
     border-color: #B0B0B0;
 }
-.searchdiv input:hover ~button{
+.searchdiv input:hover +button{
     border-color: #B0B0B0;
 }
+.fenlei{
+    visibility: hidden;
+}
+.searchdiv button:hover{
+    background-color: #FF6700;
+    border-color: #FF6700;
+}
+.searchdiv button:hover i{
+    color: #fff;
+}
+
+.titledropdown{
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgb(0, 0, 0,.3);
+    transition: height 0.3s;
+    z-index: 88;
+}
+.posternav{
+    margin: 0 auto;
+    width: 1226px;
+    height: 460px;
+    position: relative;
+    background-color: #bfa;
+}
+.posteritem{
+    background-color: rgba(105,101,101,.6);
+    width: 235px;
+    height: 100%;
+    position: absolute;
+    z-index: 77;
+}
+.posteritem ul{
+    width: 235px;
+    height: 420px;
+    padding: 20px 0;
+
+}
+.posteritem li{
+    line-height: 42px;
+    padding-left: 30px;
+}
+.posteritem li:hover{
+    background-color: #FF6700;
+}
+.posteritem a{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+.fa-angle-right{
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+.posterimg{
+    position: absolute;
+    top: 0;
+}
+.posterimg img{
+
+    width: 1226px;
+}
+ 
