@@ -1,6 +1,6 @@
 window.onload = function () {
     /* 
-        右侧导航条事件
+        右侧导航条响应事件
     */
     var ringhtnav = function () {
         var seewd = document.body.offsetWidth;
