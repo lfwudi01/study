@@ -3,12 +3,72 @@
     padding: 0;
 }
 @total-width:750;
+@context-width:693;
 html{
     font-size: (100vw/@total-width*40);
     background-color: #EFF0F3;
 }
- 
-.top-bar{
+.w{
+    width: (@context-width/40rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: none;
+}
+.top-bar:extend(.w){
+    display: flex;   
+    height: (175/40rem);
+    justify-content: space-between;
+    align-items: center;
+    a{
+        color: #24253d;
+        font-size: 30px;
+        i{
+            color: #999;
+            font-size: 18px;
+        }
+    }
+}
+
+.banner:extend(.w){
+    height:(278/40rem);
+    border-radius: 5px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu:extend(.w){
+    height: (329/40rem);
     display: flex;
-    
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    a{
+        width: (327/40rem);
+        height: (104/40rem);
+        color: white;
+        border-radius: 5px;
+        line-height: (104/40rem);
+        i{
+            margin: 0 (20/40rem) 0 (38/40rem);
+        }
+    }
+
+    .course{
+        background-color: #FF805A;
+    }
+    .star{
+        background-color: #D284FF;
+    }
+    .sub{
+        background-color: #FE5777;
+    }
+    .download{
+        background-color: #0DACFF;
+    }
 }
