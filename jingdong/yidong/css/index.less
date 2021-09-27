@@ -72,3 +72,72 @@ a{
         background-color: #0DACFF;
     }
 }
+
+.course-list:extend(.w){
+    height: (480/40rem);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-left: 2px solid #75A2E2;
+        padding-left: 6px;
+        h2{
+            font-size: 18px;
+            color: #3A3A49;
+        }
+        a{  
+            font-size: 18px;
+            color: #999;
+        }
+    }
+}
+.item-list{
+    display: flex;
+    overflow: auto;
+    width: (720/40rem);
+}
+
+.item{
+    flex: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: (320/40rem);
+    height: (360/40rem);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 (22/40rem);
+    box-sizing: border-box;
+    margin-right: 14px;
+    .cover{
+        img{
+            width: 100%;
+            height: (160/40rem);
+        }
+        
+    }
+    .couese-title{
+        font-size: 13px;
+        color: #3E3E49;
+    }
+    .userinfo{
+        display: flex;
+        align-items: center;
+        .userimg{
+            img{
+                width: (42/40rem);
+                height: (42/40rem);
+                border-radius: 25px;
+                margin-right: 6px;
+            }
+        }
+        .username{
+            font-size: 14px;
+            color: #999;
+        }
+    }
+    
+}
