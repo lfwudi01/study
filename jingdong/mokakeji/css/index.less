@@ -2,10 +2,15 @@ a{
     text-decoration: none;
 }
 
+body{
+    height: 3000px;
+}
+
 .top-bar{
     width: 100%;
     height: 80px;
     background-color: #F8F9FA;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);   
 }
 .topbar-swarp{
     display: flex;
@@ -13,14 +18,13 @@ a{
     line-height: 80px;
     width: 1226px;
     margin: 0 auto;
-    justify-content: space-between;       
+    justify-content: space-between;   
+     
     img{
         width: 235px;
         height: 40px;
         margin-top: 20px;
-    }
-    
-    
+    }      
 
     .toptitle-swarp{
         width: 80%;
@@ -37,6 +41,8 @@ a{
             li:hover a{
                 color: #6C757D;
             }
+            
+            
             .dropdown{
                 display: none;
                 position: absolute;
@@ -44,13 +50,12 @@ a{
                 background-color: #fff;
                 border-radius: 5px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                .dropdown-ul{
-                    
+                .dropdown-ul{                    
                     display: flex;
                     flex-flow: column;
                     li{
-                        height: 48px;
-                        line-height: 48px;
+                        height: 40px;
+                        line-height: 40px;
                         a{
                             padding-left: 25px;
                             display: block;
@@ -60,12 +65,94 @@ a{
                                 background-color: #F8F9FA;
                                 color: #000;
                             }
+                            &:active{
+                                background-color: #007BFF;
+                                color: #fff;
+                            }
                         }
                     }
-                }
-                
+                }  
+            }   
+        }
+    }
+}
+.advert-swarp{
+    width: 100%;
+    height: 500px;
+    img{
+        height: 500px;
+    }
+}
+.content-swarp{
+    width: 1093px;
+    margin: 0 auto;
+    .plate-swarp{
+        margin-top: 75px;
+    }
+    .content-title{
+        display: flex;
+        justify-content: space-between;
+        .left-title{
+            display: flex;
+            h1{
+                font-size: 28px;
+                color: #6C757D;
+                margin-right: 20px;
             }
-            
+            span{
+                padding-top: 16px;
+                font-size: 14px;
+                color: #6C757D;
+            }
+        }
+        .right-title{
+            a{
+                display: inline-block;
+                padding: 8px;
+                margin-left: 10px;
+                color: #6C757D;
+                &:hover{
+                    background-color: #007BFF;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.itemlist{
+    margin-top: 37px;
+    height: 510px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    .item{
+        width: 346px;
+        height: 242px;
+        border: 1px solid #DFDFDF;
+        border-radius: 5px;
+        cursor: pointer;
+        
+        &:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        &:hover p{
+            color: #000;
+        }
+        a{
+            display: block;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: center;
+            color: #6C757D;
+            margin-top: 18px;
+            font-size: 14px;
         }
     }
 }
