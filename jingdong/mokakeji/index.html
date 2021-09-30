@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./font/css/all.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./js/index.js">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -84,9 +85,31 @@
         </div>
     </header>
     <div class="advert-swarp">
-        <a href="index.html">
-            <img src="./img/advert1.jpg" alt="">
-        </a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="index.html">
+                        <img src="./img/advert/advert1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="index.html">
+                        <img src="./img/advert/advert2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="index.html">
+                        <img src="./img/advert/advert3.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
     <div class="content-swarp">
         <div class="plate-swarp">
@@ -149,12 +172,12 @@
                     <h1>服务案例</h1>
                     <span>Service Case</span>
                 </div>
-                <div class="right-title">
-                    <a href="#">全部</a>
-                    <a href="#">摩卡软件</a>
-                    <a href="#">LED显示屏</a>
-                    <a href="#">LED专业照明</a>
-                    <a href="#">景观亮化</a>
+                <div class="right-title" id="right-title">
+                    <a href="javascript:;"  style="background-color: #007BFF; color: #fff;">全部</a>
+                    <a href="javascript:;">摩卡软件</a>
+                    <a href="javascript:;">LED显示屏</a>
+                    <a href="javascript:;">LED专业照明</a>
+                    <a href="javascript:;">景观亮化</a>
                 </div>
 
             </div>
@@ -165,11 +188,32 @@
                         <p>武汉绿地中心</p>
                     </a>
                 </div>
-                <div class="rightcase-swarp">
+                <div class="rightcase-swarp" style="display:block;">
                     <div class="autoimg">
-                        <a href="#">
-                            <img src="./img/case/case2.jpg" alt="">
-                        </a>
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
                     </div>
                     <div class="case-swarp">
                         <div class="case">
@@ -186,6 +230,175 @@
                         </div>
                     </div>
                 </div>
+                <div class="rightcase-swarp" style="display:none;">
+                    <div class="autoimg">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                    <div class="case-swarp">
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case3.jpg" alt="">
+                                <p>安徽省高级人民法院服务器虚拟化</p>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case4.png" alt="">
+                                <p>合肥铁路法院云桌面</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcase-swarp" style="display:none;">
+                    <div class="autoimg">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                    <div class="case-swarp">
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case3.jpg" alt="">
+                                <p>深圳市公安局法制科</p>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case4.png" alt="">
+                                <p>湖北疾控中心</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcase-swarp" style="display:none;">
+                    <div class="autoimg">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                    <div class="case-swarp">
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case3.jpg" alt="">
+                                <p>郑州市二七区民主路智慧杆项目</p>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case4.png" alt="">
+                                <p>郑州市中原区广场南路智慧杆项目</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightcase-swarp" style="display:none;">
+                    <div class="autoimg">
+
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="./img/caseautoimg/caseauto3.jpg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                    <div class="case-swarp">
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case3.jpg" alt="">
+                                <p>武汉绿地中心</p>
+                            </a>
+                        </div>
+                        <div class="case">
+                            <a href="#">
+                                <img src="./img/case/case4.png" alt="">
+                                <p>大连国贸中心</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="plate-swarp">
@@ -272,6 +485,31 @@
             <a href="#">皖ICP备17000724号-1 @91340100670908165C</a>
         </div>
     </footer>
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: true,//等同于以下设置
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+        });
+
+        
+    </script>
 </body>
 
 </html>
