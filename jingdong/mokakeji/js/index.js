@@ -1,4 +1,5 @@
 window.onload=function(){
+    swiperadd();
     var righttitle = document.getElementById("right-title");
     var as = righttitle.getElementsByTagName("a");
     var rightcase=document.getElementsByClassName("rightcase-swarp");
@@ -6,8 +7,9 @@ window.onload=function(){
     function swiperadd(){
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
-            spaceBetween: 30,
+            // spaceBetween: 30,
             loop: true,
+            speed: 1500,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -37,12 +39,15 @@ window.onload=function(){
             this.style.color="#fff";
             for(var b=0;b<rightcase.length;b++){
                 rightcase[b].style.display="none";
-                
+                rightcase[b].style.opacity="0";
             }
-            setTimeout(function(){
+           
                 rightcase[index].style.display="block";
+                setTimeout(function () {
+                    rightcase[index].style.opacity="1";
+                },.1);
                 swiperadd();
-            },200);
+            
             
             
             
