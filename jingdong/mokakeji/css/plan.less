@@ -1,0 +1,117 @@
+body{
+    background-color: #F2F2F2;
+}
+.title-info{
+    width: 100%;
+    height: 90px;
+    ul{
+        height: 90px;
+        padding-left: 150px;
+        display: flex;
+        align-items: center;
+        .span{
+            width: 20px;
+            height: 2px;
+            background-color: #999;
+            vertical-align: 4px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        a{
+            font-size: 14px;
+            color: #999;
+            transition: all .3s;
+        }
+        a:hover{
+            color: #000;
+
+        }
+    }
+}
+.titleimg{
+    position: relative;
+    height: 290px;
+    img{
+        width: 100%;
+        height: 290px;
+    }
+    p{
+        color: #fff;
+        position: absolute;
+        font-size: 35px;
+        left: 197px;
+        top: 113px;
+        
+    }
+}
+.command{
+    width: 1290px;
+    margin: 0 auto;
+    margin-top: 142px;
+    margin-bottom: 140px;
+    ul{
+        width: 100%;
+        height: 1776px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        li{
+            background-color: #fff;
+            width: 100%;
+            height: 385px;
+            &:hover .leftinfo h1,
+            &:hover .leftinfo span{
+                color: #014099;
+            }
+            &:hover .rightinfo img{
+                transform: scale(1.05);
+            }
+            a{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                .leftinfo{
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    div{
+                        width: 50%;
+                        height: 50%;
+                    }
+                    h1{
+                        padding-top: 50px;
+                        padding-left: 40px;
+                        font-size: 30px;
+                        color: #333;
+                        
+                    }
+                    p{
+                        padding-top: 40px;
+                        padding-right: 40px;
+                        font-size: 14px;
+                        color: #999;
+                        line-height: 25px;
+                    }
+                    span{
+                        padding-left: 60px;
+                        padding-top: 100px;
+                        display: block;
+                        font-size: 14px;
+                        color: #333;
+                    }
+                }
+                .rightinfo{
+                    width: 50%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}

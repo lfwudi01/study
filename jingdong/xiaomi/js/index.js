@@ -22,11 +22,10 @@ window.onload = function () {
 
     window.onresize = function () {
         ringhtnav();
-    }
+    } 
     var lasttop = document.getElementById("lasttop");
     document.onscroll=function(){
         var ht = document.documentElement.scrollTop;
-        console.log(ht);
         if(ht>=700){
             lasttop.style.display="block";
         }else{
