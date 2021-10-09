@@ -1,6 +1,9 @@
 var returntop = document.getElementById("returntop");
 var timer=null;
 var ht=document.documentElement.scrollTop;
+/*
+    滚动显示回滚块
+*/
 document.onscroll=function(){
     ht = document.documentElement.scrollTop;
     if(ht>200){
@@ -9,7 +12,9 @@ document.onscroll=function(){
         returntop.style.display="";
     }
 }
-
+/*
+    点击返回顶层
+*/
 returntop.onclick=function(){
     timer = setInterval(function(){
         document.documentElement.scrollTop=Math.floor(ht-45);
