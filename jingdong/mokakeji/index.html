@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./wow/css/animate.min.css">
 </head>
 
 <body>
@@ -128,37 +129,38 @@
 
             </div>
             <div class="itemlist">
-                <div class="item">
+                <div class="item wow bounceIn animated" style="visibility: visible; animation-delay: 0.5s;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item wow bounceIn animated" style="visibility: visible; animation-delay: 0.5s;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item wow bounceIn animated" style="visibility: visible; animation-delay: 0.5s;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item wow bounceIn animated" style="visibility: visible; animation-delay: 0.5s;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item wow bounceIn animated" style="visibility: visible; animation-delay: 0.5s;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
                     </a>
                 </div>
-                <div class="item">
+                <div class="item wow bounceIn animated"
+                    style="visibility: visible; animation-delay: 0.5s;animation-name: bounceIn;">
                     <a href="#">
                         <img src="./img/index/item/item1.jpg" alt="">
                         <p>摩卡运维可视平台</p>
@@ -173,7 +175,7 @@
                     <span>Service Case</span>
                 </div>
                 <div class="right-title" id="right-title">
-                    <a href="javascript:;"  style="background-color: #007BFF; color: #fff;">全部</a>
+                    <a href="javascript:;" style="background-color: #007BFF; color: #fff;">全部</a>
                     <a href="javascript:;">摩卡软件</a>
                     <a href="javascript:;">LED显示屏</a>
                     <a href="javascript:;">LED专业照明</a>
@@ -182,7 +184,7 @@
 
             </div>
             <div class="caselist">
-                <div class="leftcase-swarp">
+                <div class="leftcase-swarp wow fadeInDown   animated">
                     <a href="#">
                         <img src="./img/index/case/case1.jpg" alt="">
                         <p>武汉绿地中心</p>
@@ -384,7 +386,7 @@
                         </div>
                     </div>
                     <div class="case-swarp">
-                        <div class="case">
+                        <div class="case ">
                             <a href="#">
                                 <img src="./img/index/case/case3.jpg" alt="">
                                 <p>武汉绿地中心</p>
@@ -486,13 +488,19 @@
         </div>
     </footer>
     <div class="return-top" id="returntop">
-            <i class="fas fa-angle-up"></i>
-            <span>返回顶部</span>          
+        <i class="fas fa-angle-up"></i>
+        <span>返回顶部</span>
     </div>
 
     <script src="./js/index.js"></script>
     <script src="./js/public.js"></script>
     <script src="./swiper/swiper-bundle.min.js"></script>
+    <script src="./wow/js/wow.min.js"></script>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))) {
+            new WOW().init();
+        };
+    </script>
 </body>
 
 </html>
