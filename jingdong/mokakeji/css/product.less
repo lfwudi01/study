@@ -84,6 +84,11 @@ body{
             &:hover .infoup .rightinfo span{
                 color: #014099;
             }
+            &:hover .infoup .leftinfo h1::before{
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
             .infoup{
                 height: 200px;
                 display: flex;
@@ -97,7 +102,21 @@ body{
                         display: block;
                         color: #333;
                         font-size: 30px;
+                        position: relative;
+                        
                     }
+                    h1:before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -7px;
+                        width: 0;
+                        height: 2px;
+                        background: #333;
+                        transition: all .3s;
+                        z-index: 999;
+                    }
+                    
                     p{
                         color: #999;
                         font-size: 14px;

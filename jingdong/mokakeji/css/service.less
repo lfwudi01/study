@@ -74,48 +74,50 @@ body{
         justify-content: space-between;
         flex-wrap: wrap;
         .product-item{
+            margin-top: 10px;
             margin-bottom: 40px;
             width: 490px;
-            height: 460px;
+            height: 426px;
             background-color: #fff;
+            &:hover .infodown img{
+                transform: scale(1.05);
+            }
+            &:hover .infoup .upinfo h1,
+            &:hover .infoup .downinfo span{
+                color: #014099;
+            }
             .infoup{
                 height: 200px;
                 display: flex;
-                .leftinfo{
-                    width: 60%;
+                flex-flow: column;
+                justify-content: space-evenly;
+                .upinfo{
                     margin-left: 40px;
-                    display: flex;
-                    flex-flow: column;
-                    justify-content: space-evenly;
                     h1{
                         display: block;
                         color: #333;
-                        font-size: 30px;
+                        font-size: 20px;
+                        font-weight: bold;
                     }
-                    p{
-                        color: #999;
-                        font-size: 14px;
-                    }
+                   
                 }
-                .rightinfo{
-                    width: 40%;
-                    display: flex;
-                    align-items: flex-end;
-                    justify-content: right;
+                .downinfo{
                     span{
                         display: block;
                         font-size: 14px;
                         color: #333;
-                        margin-right: 30px;
+                        margin-left: 40px;
                         margin-bottom: 30px;
                     }
                 }
             }
             .infodown{
-                height: 260px;
+                height: 266px;
+                overflow: hidden;
                 img{
-                    height: 260px;
+                    height: 266px;
                     width: 100%;
+                    transition: all 0.4s;
                 }
             }
         }
