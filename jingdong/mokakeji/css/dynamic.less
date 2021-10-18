@@ -1,0 +1,125 @@
+body{
+    background-color: #F2F2F2;
+}
+
+.title-info{
+    width: 100%;
+    height: 180px;
+    ul{
+        height: 90px;
+        padding-left: 150px;
+        display: flex;
+        align-items: center;
+        .span{
+            width: 20px; 
+            height: 2px;
+            background-color: #999;
+            vertical-align: 4px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        a{
+            font-size: 14px;
+            color: #999;
+            transition: all .3s;
+        }
+        a:hover{
+            color: #000;
+
+        }
+    }
+}
+.dynamic-swiper{
+    width: 1290px;
+    margin: 0 auto;
+    .swiper-slide{
+        width: 100%;
+        height: 380px;
+        &:hover .ab .rightswiper h3,
+        &:hover .ab .rightswiper span{
+            color: #014099;
+        }
+        &:hover .ab .leftswiper img{
+            transform: scale(1.05);
+        }
+        .ab{
+            display: flex;
+            height: 100%;
+        }
+        .leftswiper{
+           width: 645px;
+           overflow: hidden;
+           img{
+               width: 100%;
+               height: 100%;
+               transition: all 0.4s;
+           }
+        }
+        .rightswiper{
+            width: 645px;
+            height: 100%;
+            background-color: #fff;
+            position: relative;
+            h3,time,p,span{
+                position: absolute;
+            }
+            h3,time,span{
+                color: #333;
+            }
+            h3{
+                top: 60px;
+                left: 60px;
+                font-size: 24px;
+                width: 325px;
+            }
+            time{
+                top: 60px;
+                right: 90px;
+                font-size: 30px;
+            }
+            p{
+                left: 60px;
+                bottom: 60px;
+                font-size: 14px;
+                width: 240px;
+                color: #999;
+            }
+            span{
+                right: 90px;
+                bottom: 60px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.info-swiper{
+    width: 100%;
+    height: 462px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    .item-info{
+        width: 417px;
+        height: 100%;
+        background-color: #fff;
+        
+        .upinfo{
+            height: 280px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .downinfo{
+            height: 182px;
+            h3,time{
+                font-size: 20px;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}
