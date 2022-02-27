@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container .row div{
+            border: 1px solid black;
+        }
+        #div1 ul li{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">4列</div>
+            <div class="col-md-8">8列</div>
+        </div>
+    </div>
+    <!-- 列偏移 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">2</div>
+            <div class="col-md-1 col-md-offset-8">3</div>
+            <div class="col-md-1">4</div>
+        </div>
+    </div>
+    <!-- 列排序 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 col-md-push-5">1</div>
+            <div class="col-md-1 col-md-pull-1">2</div>
+        </div>
+    </div>
+
+    <h1>你好世界<small>副标题</small></h1>
+    <h2>你好世界<small>副标题</small></h2>
+    <h3>你好世界<small>副标题</small></h3>
+    <h4>你好世界<small>副标题</small></h4>
+    <h5>你好世界<small>副标题</small></h5>
+    <h6>你好世界<small>副标题</small></h6>
+
+    <p>以后的你会感谢现在的你</p>
+    <p class="lead"><small>以后的</small>你<b>会</b>感谢<i>现在</i>的你</p>
+    <!-- 强调 -->
+    <div class="text-muted">你好世界</div>
+    <div class="text-primary">你好世界</div>
+    <div class="text-success">你好世界</div>
+    <div class="text-info">你好世界</div>
+    <div class="text-warning">你好世界</div>
+    <div class="text-danger">你好世界</div>
+    <!-- 对齐 -->
+    <div class="text-left">以后的你会感谢现在的你</div>
+    <div class="text-right">以后的你会感谢现在的你</div>
+    <div class="text-center">以后的你会感谢现在的你</div>
+    <div class="text-justify">以后的你会感谢现在的你</div>
+    
+    <div id="div1">
+        <ul>
+            <li>你好世界</li>
+            <li class="list-unstyled">你好世界</li>
+            <li class="list-inline">你好世界</li>
+            
+            <dl class="dl-horizontal">
+                <dt>我的世界解决解决军军解决解决军军军</dt>
+                <dd>咔咔咔咔咔咔</dd>
+                <dt>我的</dt>
+                <dd>咔咔咔咔咔咔</dd>
+                <dt>我的</dt>
+                <dd>咔咔咔咔咔咔</dd>
+            </dl>
+        </ul>
+    </div>
+    
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
